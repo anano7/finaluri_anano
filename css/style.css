@@ -1,0 +1,433 @@
+/* reseti */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.logo{
+  font-family:'Lobster', cursive;
+  font-size: 24px;
+}
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+.nav-links a:hover {
+  color: #d63384;
+  transition: color 0.3s;
+}
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.burger span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin: 4px 0;
+}
+
+/* satauri */
+.satauri {
+  min-height: 100vh;
+  padding: 100px 32px 32px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.subsatauri{
+    width: 1100px;
+    background: linear-gradient(to right, #fce3ec, #cc8ea2 );
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    justify-content: left;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+
+}
+
+.box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:30px;
+}
+
+.box3 span{
+  font-family: 'Lobster', cursive;
+}
+
+.foto1{
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+}
+
+.fotodiv{
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.satauri h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #d63384;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.satauri .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #d63384;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: fit-content;         
+
+}
+.satauri .btn:hover {
+  background: #ad2769;
+}
+
+
+
+/* products */
+.products, .categories, .about, .register {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+ 
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.product {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+
+
+
+/* newsebi */
+
+.news {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.news-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.newsimage img {
+  width: 300px;
+  height: auto;
+  max-width: 100%;
+}
+
+.news-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.news-text h3 {
+  color: #d63384;
+  margin-bottom: 1rem;
+  font-family: 'Lobster',cursive;
+}
+
+.news-text p {
+  line-height: 1.6;
+  font-size: 1rem;
+
+}
+
+
+/* contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+form input, form textarea, form button {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  background: #d63384;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+form button:hover {
+  background: #ad2769;
+}
+
+/* footeri */
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+
+
+/* scroll to top */
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #d63384;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-size: 18px;
+  display: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/* cookiebi */
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 1rem;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+#cookie-banner button {
+  background: #d63384;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+
+
+
+/* responsive */
+
+@media (max-width: 1024px) {
+  .news-container {
+    flex-direction: column; 
+    align-items: center;         
+    text-align: center;         
+  }
+
+  .news-text {
+    max-width: 100%;            
+    text-align: center;         
+    padding: 0 1rem;            
+  }
+
+  .newsimage img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .burger {
+    display: flex;
+  }
+  .subsatauri {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    text-align: center;
+    padding: 120px 32px 32px;
+  }
+
+  .box3 {
+    align-items: center;
+  }
+
+  .fotodiv {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .foto1 {
+    width: 80%;
+    max-width: 250px;
+  }
+    .news-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .news-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .newsimage img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .satauri h1 {
+    font-size: 2rem;
+  }
+  .product img {
+    height: 120px;
+  }
+  .news-text p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .news-container {
+    padding: 0 0.5rem;
+  }
+
+  .newsimage img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin-bottom: 0.8rem;
+  }
+
+  .news-text {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+
+  .news-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .news-text p {
+    font-size: 0.85rem;
+  }
+}
+
+
+
+/* aq ro ar chans da gachndes */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* ro gaCndeba daaresetos */
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#login-status {
+  margin-top: 1rem;
+  color: green;
+}
+
+/* headeri fers ro icvlis */
+header.scrolled {
+  background-color: #ffe4f0;
+}
+

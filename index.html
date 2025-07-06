@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glimmer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Glimmer</div>
+      <ul class="nav-links">
+        <li><a href="#satauri">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="satauri" id="satauri">
+    <div class="subsatauri">
+      <div class="box3">
+        <h1>Welcome to <span>Glimmer</span></h1>
+        <p>Your go-to place for awesome makeup products!</p>
+        <a href="#products" class="btn">Shop Now</a>
+      </div>
+      <div class="fotodiv">
+        <img src="images/makeup4.png" alt="foto" class="foto1">
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid" id="product-list">
+    </div>
+  </section>
+
+  <section class="news" id="news">
+    <h2>Recent News</h2>
+    <div class="news-container">
+      <div class="newsimage">
+        <img src="images/makeupgogo.PNG" alt="news" />
+      </div>
+      <div class="news-text">
+        <h3>New Summer Collection Launch</h3>
+        <p>We are excited to introduce our brand-new summer collection, full of vibrant colors and innovative formulas. Get ready to glow all season long with Glimmer’s fresh releases!</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Since 2008, you've trusted us to bring you the very best in beauty. To inspire and guide with our expert curation, to keep you ahead of the trends and to serve up the latest innovations and products. Our mission? To inspire self-expression and unlock a love of beauty in everyone. We welcome all ages, all faces to join the cult.</p>
+  </section>
+
+  <section class="register" id="register">
+    <h2>Register</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <label><input type="checkbox" onclick="togglePassword()" /> Show Password</label>
+      <button type="submit">Send</button>
+    </form>
+    <p id="login-status"></p>
+
+  </section>
+
+  <footer class="footer">
+    <p>Made with love by Anano Kapanadze</p>
+  </footer>
+
+
+  <button id="scrollToTop">↑</button>
+
+  <div id="cookie-banner">
+    <p>We use cookies to enhance your experience.</p>
+    <button id="accept-cookies">Accept</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
